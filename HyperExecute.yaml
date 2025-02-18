@@ -35,7 +35,7 @@ uploadArtefacts:
 mergeArtifacts: true
 testDiscovery:
   type: raw
-  mode: static
+  mode: dynamic
   command: snooper  --targetOs=win --featureFilePaths=src/test/java/app --frameWork=java  | sed 's/:.*//' | uniq
 
 scenarioCommandStatusOnly: true
